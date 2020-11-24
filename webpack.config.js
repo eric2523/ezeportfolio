@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/ezeportfolio.jsx",
+  entry: "./frontend/index.jsx",
   output: {
     path: path.resolve(__dirname, "frontend", "dist"),
-    filename: "bundle.js",
+    filename: "./bundle.js",
   },
   resolve: {
     extensions: [".js", ".jsx", "*"],
