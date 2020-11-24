@@ -11,7 +11,9 @@ export const Splash = (props) => {
         </div>
       </div>
       <div className="splash-right">
+        <span>- Introduction</span>
         <h2>Software Engineer based in the Bay Area.</h2>
+        <h2>My story</h2>
       </div>
     </div>
   )
