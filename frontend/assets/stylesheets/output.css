@@ -35,8 +35,7 @@ body {
 
 .splash-right-content > h2 {
   font-size: 1.9rem;
-  letter-spacing: 0.1rem; }
-.splash-right-content > span:last-child {
-  margin-top: 25px; }
+  letter-spacing: 0.1rem;
+  margin: 5px 0 18px 0; }
 
 /*# sourceMappingURL=output.css.map */
