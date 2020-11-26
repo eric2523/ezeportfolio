@@ -1,41 +1,42 @@
-body,
-div,
-h1,
-h2,
-h3,
-span {
+.splash-right-content > span {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  color: #6b818c; }
+
+body {
   font: 100% "Noto Sans KR", sans-serif;
   background-color: #212d40;
-  color: #ebf1ff;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline; }
+  color: #ebf1ff; }
 
 .splash-main {
   display: flex;
   justify-content: center;
-  align-items: center; }
-
-.splash-img {
-  background-image: url(../images/eric_xian.png);
-  background-position: center;
-  background-size: cover;
-  width: 400px;
-  height: 400px; }
+  align-items: center;
+  height: 90vh; }
 
 .splash-left h1 {
-  font-size: 50px; }
+  font-size: 6rem;
+  letter-spacing: 0.1rem; }
+
+.splash-left,
+.splash-right {
+  position: relative;
+  width: 40%; }
 
 .splash-left {
-  position: relative; }
-
-.splash-img-text {
-  position: absolute;
-  background: transparent;
-  top: 50%; }
+  display: flex;
+  justify-content: flex-end; }
 
 .splash-img-text > h1 {
   background: transparent; }
+
+.splash-right-content {
+  margin: 0 45px; }
+
+.splash-right-content > h2 {
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem; }
+.splash-right-content > span:last-child {
+  margin-top: 25px; }
 
 /*# sourceMappingURL=output.css.map */

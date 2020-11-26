@@ -1,54 +1,60 @@
 $font-stack: "Noto Sans KR", sans-serif;
 $primary-background-color: #212d40;
 $primary-font-color: #ebf1ff;
+%side-heading {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  color: #6b818c;
+} 
 
-body,
-div,
-h1,
-h2,
-h3,
-span {
+body {
   font: 100% $font-stack;
   background-color: $primary-background-color;
   color: $primary-font-color;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
 }
 
 .splash-main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.splash-img {
-  background-image: url(../images/eric_xian.png);
-  background-position: center;
-  background-size: cover;
-  width: 400px;
-  height: 400px;
+  height: 90vh;
 }
 
 .splash-left h1 {
-  font-size: 50px;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+}
+
+.splash-left,
+.splash-right {
+  position: relative;
+  width: 40%;
 }
 
 .splash-left {
-  position: relative;
-}
-
-.splash-img-text {
-  position: absolute;
-  background: transparent;
-  top: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .splash-img-text > {
   h1 {
-  background: transparent;  
+    background: transparent;
   }
 }
 
+.splash-right-content {
+  margin: 0 45px;
+}
 
+.splash-right-content > {
+  span {
+    @extend %side-heading;
+  }
+  h2 {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+  }
+  span:last-child {
+    margin-top: 25px;
+  }
+}
