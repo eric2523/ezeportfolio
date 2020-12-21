@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div>
       <Switch>
-        <Route path="/" component={ Splash }/>
+        <Route exact path="/" component={ Splash }/>
         <Redirect to ="/"/>
       </Switch>
     </div>
