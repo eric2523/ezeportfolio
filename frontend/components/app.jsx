@@ -9,6 +9,9 @@ export const App = () => {
         <Route exact path="/" component={ Splash }/>
         <Redirect to ="/"/>
       </Switch>
+      <footer>
+        <span><i class="fab fa-github"></i></span>
+      </footer>
     </div>
   )
 }
